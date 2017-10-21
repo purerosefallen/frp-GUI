@@ -8,7 +8,7 @@ build:
     parallel: true
 
 after_build:
-  - 7z a frp.7z bin -xr!.git* -mx9
+  - 7z a frp.7z ./* -xr!.git* -mx9
   
 test: off
 artifacts:
