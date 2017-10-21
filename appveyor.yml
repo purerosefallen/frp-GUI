@@ -6,7 +6,8 @@ configuration: Release
 build: 
     project: frpGUI.sln
     parallel: true
-
+ 
+after_build:
   - 7z a frp.7z bin -xr!.git* -mx9
 
 test: off
